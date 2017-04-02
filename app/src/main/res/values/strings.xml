@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">  MY CAR</string>
+    <string name="title_activity_select_car">  Select Car Here</string>
+    <string name="title_activity_welcomepage">   My CAR</string>
+    <string name="title_activity_add_car">  Add Car Here</string>
+    <string name="title_activity_show_cardata">showCardata</string>
+</resources>

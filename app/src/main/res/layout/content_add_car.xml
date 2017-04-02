@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/darksalmon"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.kulde.myapplication.addCar"
+    tools:showIn="@layout/activity_add_car">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/editTextDate"
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:background="@drawable/buttonblue"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_below="@id/editTextDate"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:text="Model"
+        android:id="@+id/textViewModel"
+        android:background="@color/brown"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+         />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:background="@color/brown"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Year"
+        android:id="@+id/textViewyear"
+        android:layout_below="@+id/textViewModel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:background="@color/brown"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Miles"
+        android:id="@+id/textView"
+        android:layout_below="@+id/textViewyear"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textViewEnterModel"
+        android:layout_alignTop="@+id/textViewModel"
+        android:background="@color/bisque"
+        android:layout_toRightOf="@+id/textViewModel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/textViewyear" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_above="@+id/textView"
+        android:layout_toRightOf="@+id/textViewyear"
+        android:background="@color/bisque"
+        android:layout_alignRight="@+id/textViewEnterModel"
+        android:layout_alignEnd="@+id/textViewEnterModel"
+        android:layout_alignTop="@+id/textViewyear"
+        android:inputType="number"
+        android:id="@+id/textViewEnterYear" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textViewEnterMiles"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:background="@color/bisque"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:inputType="numberDecimal"
+        android:layout_alignBottom="@+id/textView" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_below="@id/textViewEnterMiles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="3dip" >
+        <Button
+            android:layout_width="90dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:onClick="onclickAddbutton"
+            android:id="@+id/buttonsave"
+            android:background="@drawable/redbutton"
+            android:textColor="@color/white"
+            android:layout_below="@+id/textViewEnterMiles"
+            />
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:id="@+id/buttonback"
+            android:onClick="onclickBackbutton"
+            android:background="@drawable/redbutton"
+
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,208 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/burlywood"
+    android:orientation="vertical">
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/peachpuff"
+
+    android:stretchColumns="1">
+    <TableRow android:padding="3dip"></TableRow>
+    <TableRow android:background="@color/tomato"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Car"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_column="0"/>
+        <EditText
+            android:id="@+id/carName"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:editable="false"
+            android:layout_column="1"
+            android:background="@android:color/transparent"
+            android:layout_span="2" />
+    </TableRow>
+
+    <TableRow android:background="@color/burlywood"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:text="Initial Miles" />
+        <EditText
+            android:id="@+id/InitialMiles"
+            android:editable="false"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:layout_span="2" />
+    </TableRow>
+
+    <TableRow android:backgroundTint="#f68686"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:text="Date" />
+        <EditText
+            android:id="@+id/Date"
+            android:editable="false"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:layout_span="2" />
+    </TableRow>
+
+    <TableRow android:background="@color/burlywood"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:text="New Miles" />
+        <EditText
+            android:id="@+id/FuelAddedMiles"
+            android:editable="false"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:layout_span="2" />
+    </TableRow>
+
+    <TableRow android:backgroundTint="#f68686"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:text="Previous Miles" />
+        <EditText
+            android:id="@+id/PreviousMiles"
+            android:editable="false"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:layout_span="2" />
+    </TableRow>
+
+    <TableRow android:background="@color/burlywood"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:text="Fuel in Gallon" />
+        <EditText
+            android:id="@+id/FuelQuantity"
+            android:editable="false"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:layout_span="2" />
+    </TableRow>
+
+    <TableRow android:backgroundTint="#f68686"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+        <TextView
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:text="Amount Paid$" />
+        <EditText
+            android:id="@+id/PaidAmount"
+            android:editable="false"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:layout_span="2" />
+    </TableRow>
+
+    <TableRow android:background="@color/burlywood"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Price/Gallon" />
+        <EditText
+            android:id="@+id/PricePGal"
+            android:editable="false"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:layout_span="2" />
+    </TableRow>
+</TableLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        >
+        <Button
+            android:id="@+id/newentry"
+            android:text="New Entry"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/history"
+            android:layout_toStartOf="@+id/history" />
+        <Button
+            android:id="@+id/history"
+            android:text="Car History"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:id="@+id/deletecar"
+            android:text="Delete Car"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:onClick="onClickDeletecar"
+            android:layout_height="50dp"
+            android:layout_above="@+id/back"
+            android:layout_toRightOf="@+id/history"
+            android:layout_toEndOf="@+id/history" />
+        <Button
+            android:id="@+id/back"
+            android:text="Back"
+            android:layout_width="wrap_content"
+
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:onClick="onclickback"
+            android:layout_column="1"
+            android:gravity="center"
+            android:layout_height="50dp"
+            android:layout_below="@+id/history"
+            android:layout_centerHorizontal="true" />
+</RelativeLayout>
+
+    </LinearLayout>
